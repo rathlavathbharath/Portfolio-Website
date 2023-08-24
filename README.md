@@ -1,2 +1,2 @@
 # Portfolio-Website
-I designed an interactive platform that effectively presents my technical abilities, certifications and projects.
+The repository contains the source code for my personal portfolio website, showcasing my skills, certifications, projects and achievements. Built using HTML, CSS, and JavaScript, the project demonstrates my proficiency in front-end development. The repository is organized with separate directories for each technology, ensuring clear project structure. Regular updates and improvements are made to enhance functionality and aesthetics. Feel free to explore the repository to gain insights into my coding style, project architecture, and commitment to continuous learning.
