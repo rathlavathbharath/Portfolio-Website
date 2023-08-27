@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="scroll-up-btn">
+      <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+      <div class="max-width">
+        <div class="logo">
+          <a href="#">Portfo<span>lio.</span></a>
+        </div>
+        <ul class="menu">
+          <li><a href="#home" class="menu-btn">Home</a></li>
+          <li><a href="#about" class="menu-btn">About</a></li>
+          <li><a href="#skills" class="menu-btn">Skills</a></li>
+          <li><a href="#certifications" class="menu-btn">Certificates</a></li>
+          <li><a href="#projects" class="menu-btn">Projects</a></li>
+          <li><a href="#contact" class="menu-btn">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- home section start -->
+    <section class="home" id="home">
+      <div class="max-width">
+        <div class="home-content">
+          <div class="text-1">Hello, my name is</div>
+          <div class="text-2">Bharath Rathlavath</div>
+          <div class="text-3">And I'm a <span class="typing"></span></div>
+          <!--<a href="#">Hire me</a> -->
+          <a href="#" onclick="downloadResume('resume')">Hire me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section start -->
+    <section class="about" id="about">
+      <div class="max-width">
+        <h2 class="title">About me</h2>
+        <div class="about-content">
+          <div class="column left">
+            <img src="images/about_image.jpg" alt="" />
+          </div>
+          <div class="column right">
+            <div class="text">
+              I'm Bharath and I'm a <span class="typing-2"></span>
+            </div>
+            <p>
+              A passionate and versatile tech enthusiast with a strong
+              foundation in programming languages, which I've leveraged to
+              tackle complex problem-solving and computational programming
+              challenges. My grasp of data structures and algorithms empowers me
+              to approach tasks with efficiency and creativity. Beyond technical
+              prowess, I bring teamwork, leadership, and effective
+              communication. My experiences collaborating with diverse teams
+              have refined my ability to create impactful solutions. I'm always
+              excited to connect with fellow professionals, technology
+              enthusiasts, and potential collaborators. Feel free to reach
+              out—I'm eager to exchange ideas and experiences!
+            </p>
+            <!--Extra tabs in the about section-->
+            <div class="tab-titles">
+              <p class="tab-links active-link" data-tab="resume">
+                Download Resume
+              </p>
+              <p class="tab-links" data-tab="experience">Experience</p>
+              <p class="tab-links" data-tab="education">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="resume">
+              <button class="tab-download" onclick="downloadResume('resume')">
+                Download Resume
+              </button>
+            </div>
+
+            <div class="tab-contents exp-tab" id="experience">
+              <ul>
+                <li>Tuitions for students</li>
+                <li>
+                  Worked as volunteer in Pragnya event and conducted Technical &
+                  Non-technical events in college
+                </li>
+                <li>
+                  As captain of my cricket team in different levels, I
+                  demonstrated strong leadership skills by effectively
+                  communicating strategies, coordinating team efforts, and
+                  inspiring teammates to perform at their best, resulting in
+                  several victories and team awards
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents edu-tab" id="education">
+              <ul>
+                <li>
+                  2020-2024 | GOKARAJU RANGARAJU INSTITUTE OF ENGINEERING AND
+                  TECHNOLOGY
+                </li>
+                <p>Bachelor of Computer Science and Engineering</p>
+                <p>CGPA- 9.02</p>
+                <li>2018-2020 | DR. BRACTSWR COE JR. COLLEGE</li>
+                <p>Intermediate- Math Physics Chemistry</p>
+                <p>Percentage- 95.3 %</p>
+                <li>2018 | NIRMALA VIDYALAYAM HIGH SCHOOL</li>
+                <p>GPA- 8.7</p>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skills section start -->
+    <section class="skills" id="skills">
+      <div class="max-width">
+        <h2 class="title">My skills</h2>
+        <div class="skills-content">
+          <div class="column left">
+            <div class="text">My creative skills & experiences.</div>
+            <p>
+              Greetings! I'm delighted to present my portfolio, showcasing a
+              dynamic skill set that encompasses programming languages like C,
+              C++, Python, and Java. I also possess proficiency in web
+              technologies such as HTML, CSS, and JavaScript, allowing me to
+              craft visually appealing and interactive web experiences. With a
+              solid foundation in data structures, algorithms, and computational
+              problem-solving, I excel in breaking down intricate challenges
+              into elegant solutions. My adeptness in Database Management using
+              MySQL ensures the seamless organization and accessibility of data.
+              I bring a holistic approach to software development through a deep
+              understanding of Object-Oriented Programming, complemented by
+              insights into Operating Systems and Computer Networks. Beyond
+              technical expertise, I thrive in collaborative environments,
+              leveraging effective communication, leadership skills, and
+              teamwork to drive project success. Thank you for exploring my
+              portfolio; each project herein reflects my dedication to pushing
+              boundaries and delivering excellence in every endeavor.
+            </p>
+            <a
+              href="https://www.linkedin.com/in/rathlavathbharathkumar"
+              class="read-more-link"
+              target="_blank"
+              >Read more on LinkedIn</a
+            >
+          </div>
+          <div class="column right">
+            <div class="bars">
+              <div class="info">
+                <span>Data Structures and Algorithms</span>
+                <span>90%</span>
+              </div>
+              <div class="line dsa"></div>
+            </div>
+            <div class="bars">
+              <div class="info">
+                <span>Java</span>
+                <span>80%</span>
+              </div>
+              <div class="line java"></div>
+            </div>
+            <div class="bars">
+              <div class="info">
+                <span>Python</span>
+                <span>70%</span>
+              </div>
+              <div class="line python"></div>
+            </div>
+            <div class="bars">
+              <div class="info">
+                <span>C & C++</span>
+                <span>80%</span>
+              </div>
+              <div class="line c"></div>
+            </div>
+            <div class="bars">
+              <div class="info">
+                <span>HTML</span>
+                <span>90%</span>
+              </div>
+              <div class="line html"></div>
+            </div>
+            <div class="bars">
+              <div class="info">
+                <span>CSS</span>
+                <span>60%</span>
+              </div>
+              <div class="line css"></div>
+            </div>
+            <div class="bars">
+              <div class="info">
+                <span>JavaScript</span>
+                <span>50%</span>
+              </div>
+              <div class="line js"></div>
+            </div>
+            <div class="bars">
+              <div class="info">
+                <span>DBMS & MySQL</span>
+                <span>80%</span>
+              </div>
+              <div class="line mysql"></div>
+            </div>
+            <div class="bars">
+              <div class="info">
+                <span>OOPS & OS</span>
+                <span>80%</span>
+              </div>
+              <div class="line oops"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--     certification section starts   -->
+
+    <section class="certifications" id="certifications">
+      <div class="max-width">
+        <h2 class="title">My Certifications</h2>
+        <div class="cert-cards">
+          <div class="cert-card">
+            <a data-fancybox="certificates" href="images/awsml.jpg">
+              <div class="cert-thumbnail">
+                <img src="images/awsml.jpg" alt="Certificate 1" />
+              </div>
+              <div class="cert-details">
+                <h3>
+                  AWS Academy Graduate - AWS Academy Machine Learning
+                  Foundations
+                </h3>
+                <p>Amazon Web Services</p>
+                <p>Date Completed: May 2023</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="cert-card">
+            <a data-fancybox="certificates" href="images/dsa.png">
+              <div class="cert-thumbnail">
+                <img src="images/dsa.png" alt="Certificate 2" />
+              </div>
+              <div class="cert-details">
+                <h3>Certification of Completion - DSA</h3>
+                <p>Smart Interviews</p>
+                <p>Date Completed: Mar 2023</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="cert-card">
+            <a data-fancybox="certificates" href="images/CCNAv7.jpg">
+              <div class="cert-thumbnail">
+                <img src="images/CCNAv7.jpg" alt="Certificate 3" />
+              </div>
+              <div class="cert-details">
+                <h3>CCNAv7: Introduction to Networks</h3>
+                <p>Cisco Networking Academy</p>
+                <p>Date Completed: Sep 2022</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="cert-card">
+            <a data-fancybox="certificates" href="images/python.jpg">
+              <div class="cert-thumbnail">
+                <img src="images/python.jpg" alt="Certificate 4" />
+              </div>
+              <div class="cert-details">
+                <h3>Course Completion Certificate - Basics of Python</h3>
+                <p>Infosys Springboard</p>
+                <p>Date Completed: May 2022</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="cert-card">
+            <a data-fancybox="certificates" href="images/Eduskills_cloud.jpg">
+              <div class="cert-thumbnail">
+                <img src="images/Eduskills_cloud.jpg" alt="Certificate 5" />
+              </div>
+              <div class="cert-details">
+                <h3>AWS Cloud Virtual Internship</h3>
+                <p>EduSkills Foundation</p>
+                <p>Date Completed: Dec 2021</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="cert-card">
+            <a data-fancybox="certificates" href="images/awscloud.jpg">
+              <div class="cert-thumbnail">
+                <img src="images/awscloud.jpg" alt="Certificate 6" />
+              </div>
+              <div class="cert-details">
+                <h3>AWS Academy Graduate - AWS Academy Cloud Foundations</h3>
+                <p>Amazon Web Services</p>
+                <p>Date Completed: Nov 2021</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="cert-card">
+            <a data-fancybox="certificates" href="images/web_Dev.jpg">
+              <div class="cert-thumbnail">
+                <img src="images/web_Dev.jpg" alt="Certificate 7" />
+              </div>
+              <div class="cert-details">
+                <h3>Web Development</h3>
+                <p>Inmovidu</p>
+                <p>Date Completed: Aug 2021</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--   Project section starts -->
+    <section class="projects" id="projects">
+      <div class="max-width">
+        <h2 class="title">My Projects</h2>
+        <div class="project-cards">
+          <div class="project" id="project1">
+            <h2>INTELLIGENT SURVEILLANCE SUPPORT SYSTEM</h2>
+            <div class="project-image">
+              <img src="images/project_img1.png" alt="Project 1" />
+            </div>
+            <div class="project-card-back">
+              <p>
+                An innovative Intelligent Surveillance Support System
+                capitalizing on AI and Computer Vision. Enhanced conventional
+                surveillance by incorporating real-time advancements: face
+                recognition, theft/cheating alarms, visitor tracking, and motion
+                detection. Revolutionized security measures by transforming
+                static monitoring into intelligent, proactive surveillance.
+              </p>
+              <button id="github-button">Visit GitHub Profile</button>
+              <p class="github-note">
+                (Click on the button to view more detailes about project)
+              </p>
+            </div>
+          </div>
+
+          <div class="project" id="project2">
+            <h2>JOB PORTAL</h2>
+            <div class="project-image">
+              <img src="images/project_img2.png" alt="Project 2" />
+            </div>
+            <div class="project-card-back">
+              <p>
+                A dynamic job portal utilizing HTML, CSS, Bootstrap, PHP, MySQL,
+                and XAMPP. Implemented an Admin panel with authentication, job
+                listing creation, and candidate tracking. The portal showcases
+                company job postings, featuring user-friendly employer
+                application forms and robust database management for candidate
+                records and job details.
+              </p>
+              <button id="github-button">Visit GitHub Profile</button>
+              <p class="github-note">
+                (Click on the button to view more detailes about project)
+              </p>
+            </div>
+          </div>
+
+          <div class="project" id="project3">
+            <h2>HANGMAN GAME</h2>
+            <div class="project-image">
+              <img src="images/project_img3.jpg" alt="Project 3" />
+            </div>
+            <div class="project-card-back">
+              <p>
+                A classic Hangman game using Python. In this game, one player
+                selects a word. Other players have a certain number of guesses
+                to guess the characters in the word. If the players are able to
+                guess the characters in the entire word within certain attempts,
+                they win. Otherwise, they lose.
+              </p>
+              <button id="github-button">Visit GitHub Profile</button>
+              <p class="github-note">
+                (Click on the button to view more detailes about project)
+              </p>
+            </div>
+          </div>
+
+          <div class="project" id="project4">
+            <h2>PORTFOLIO WEBSITE</h2>
+            <div class="project-image">
+              <img src="images/project_img4.png" alt="Project 4" />
+            </div>
+            <div class="project-card-back">
+              <p>
+                Created a dynamic and engaging personal portfolio website to
+                showcase my skills and achievements in the field of web
+                development. Leveraging a strong foundation in HTML, CSS, and
+                JavaScript, I designed an interactive platform that effectively
+                presents my technical abilities and projects. The website
+                features a user-friendly interface, responsive design, and
+                seamless navigation, ensuring an optimal viewing experience
+                across various devices.
+              </p>
+              <button id="github-button">Visit GitHub Profile</button>
+              <p class="github-note">
+                (Click on the button to view more detailes about project)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+      <div class="max-width">
+        <h2 class="title">Contact me</h2>
+        <div class="contact-content">
+          <div class="column left">
+            <div class="text">Get in Touch</div>
+            <p>
+              If you require any further information, please feel free to
+              contact me/ let me know
+            </p>
+            <div class="icons">
+              <div class="row">
+                <i class="fas fa-user"></i>
+                <div class="info">
+                  <div class="head">Name</div>
+                  <div class="sub-title">Bharath Kumar Rathlavath</div>
+                </div>
+              </div>
+              <div class="row">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="info">
+                  <div class="head">Address</div>
+                  <div class="sub-title">Hyderabad, Telangana</div>
+                </div>
+              </div>
+              <div class="row">
+                <i class="fas fa-envelope"></i>
+                <div class="info">
+                  <div class="head">Email</div>
+                  <div class="sub-title">bharath.rathlavath@gmail.com</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column right">
+            <div class="text">Message me</div>
+            <form action="#" name="submit-to-google-sheet">
+                <div class="fields">
+                    <div class="field name">
+                        <input type="text" name="Name" placeholder="Name" required />
+                    </div>
+                    <div class="field email">
+                        <input type="email" name="Email" placeholder="Email" required />
+                    </div>
+                </div>
+                <div class="field">
+                    <input type="text" name="Subject" placeholder="Subject" required />
+                </div>
+                <div class="field textarea">
+                    <textarea cols="30" rows="10" name="Message" placeholder="Message.." required></textarea>
+                </div>
+                <div class="button-area">
+                    <button type="submit">Send message</button>
+                </div>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--     footer section start     -->
+    <footer>
+      <span
+        >Created By <a href="https://portfolio-website-rbharath.netlify.app/">Bharath</a> |
+        <span class="far fa-copyright"></span> 2021 All rights reserved.</span
+      >
+    </footer>
+
+    <!-- downloading resume function -->
+    <script>
+      function downloadResume(tabname) {
+        var resumeUrls = {
+          resume:
+            "https://drive.google.com/file/d/16N8WAJUgRb_rH2QC0GVOH4nBcfXJ5_qu/view?usp=sharing",
+          // Add more mappings as needed
+        };
+
+        var resumeUrl = resumeUrls[tabname];
+
+        if (resumeUrl) {
+          var link = document.createElement("a");
+          link.href = resumeUrl;
+          link.download = "bharath_resume.pdf"; // Change the filename as needed
+          link.target = "_blank"; // Open in a new tab/window
+
+          // Dispatch the click event
+          link.dispatchEvent(new MouseEvent("click"));
+
+          // Prevent memory leaks by removing the link after the click
+          URL.revokeObjectURL(link.href);
+        } else {
+          console.error("Resume URL not found for tab: " + tabname);
+        }
+      }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzg489jiIMr8i4RMyD6AvuMrqkXyBc0B7_TJkrK4MxelCoWGi-cVh_izomCbza4U5VO/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg =document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML= "Message sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+  </body>
+</html>
